@@ -13,7 +13,7 @@ public class Contacto {
    private  String nome;
    private String email;
    private String mensagem;
-   private Long telefone;
+   private long telefone;
 
     public String getNome() {
         return nome;
