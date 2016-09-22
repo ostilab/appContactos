@@ -10,8 +10,10 @@ package com.osti.ostirh.appContacto.Modelo;
  * @author Samuel Mavungo
  */
 public class Contacto {
-   private  String nome,email,mensagem;
-   private Long Telefone;
+   private  String nome;
+   private String email;
+   private String mensagem;
+   private Long telefone;
 
     public String getNome() {
         return nome;
@@ -38,10 +40,10 @@ public class Contacto {
     }
 
     public Long getTelefone() {
-        return Telefone;
+        return telefone;
     }
 
     public void setTelefone(Long Telefone) {
-        this.Telefone = Telefone;
+        this.telefone = Telefone;
     }
 }
