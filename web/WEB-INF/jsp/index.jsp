@@ -1,20 +1,85 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-    "http://www.w3.org/TR/html4/loose.dtd">
-
+<!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Welcome to Spring Web MVC project</title>
-    </head>
+<head>
+  <!-- Site made with Mobirise Website Builder v3.4.4, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v3.4.4, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+  <meta name="description" content="">
+  <title>OSTIRH | Confirmação</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic&amp;subset=latin">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900">
+  <link rel="stylesheet" href="assets/et-line-font-plugin/style.css">
+  <link rel="stylesheet" href="assets/bootstrap-material-design-font/css/material.css">
+  <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/socicon/css/socicon.min.css">
+  <link rel="stylesheet" href="assets/animate.css/animate.min.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+</head>
+<body>
+<section class="mbr-section mbr-section__container" id="header3-5" style="background-color: rgb(255, 255, 255); padding-top: 20px; padding-bottom: 20px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h3 class="mbr-section-title display-2"></h3>
+                <small class="mbr-section-subtitle"></small>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <body>
-        <p>Hello! This is the default welcome page for a Spring Web MVC project.</p>
-        <p><i>To display a different welcome page for this project, modify</i>
-            <tt>index.jsp</tt> <i>, or create your own welcome page then change
-                the redirection in</i> <tt>redirect.jsp</tt> <i>to point to the new
-                welcome page and also update the welcome-file setting in</i>
-            <tt>web.xml</tt>.</p>
-        <h1>${confirmacao}</h1>
-    </body>
+<section class="mbr-section" id="msg-box5-3" style="background-color: rgb(255, 255, 255); padding-top: 0px; padding-bottom: 0px;">
+
+    
+    <div class="container">
+        <div class="row">
+            <div class="mbr-table-md-up">
+
+              
+
+              <div class="mbr-table-cell mbr-right-padding-md-up col-md-5 text-xs-center text-md-right">
+                  <h3 class="mbr-section-title display-2">Muito Obrigado ${contacto.nome}, a sua mesagem foi enviada com sucesso!</h3>
+                  <div class="lead">
+
+                      <p>A mesagem que enviou sera respondida no correio elctrónico informado:<br>. <tt>${contacto.email}</tt>.</p>
+
+                  </div>
+
+                  <div><a class="btn btn-warning" href="http://ostirh.com">VOLTAR!</a></div>
+              </div>
+
+
+              
+
+
+              <div class="mbr-table-cell mbr-valign-top col-md-7">
+                  <div class="mbr-figure"><img src="assets/images/ostilogo-1400x476-35.png"></div>
+              </div>
+
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smooth-scroll/SmoothScroll.js"></script>
+  <script src="assets/viewportChecker/jquery.viewportchecker.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+  
+  <input name="animation" type="hidden">
+  </body>
 </html>
