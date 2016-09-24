@@ -35,7 +35,7 @@ public class MainController {
             @RequestParam(value = "message", required = true) String mesagem,
             @RequestParam(value = "codigo_seg", required = false) String codigo, ModelMap mod) {
 
-        Contacto contacto = new Contacto(nome, "info@ostirh.com", mesagem, telefone);
+        Contacto contacto = new Contacto(nome, email, mesagem, telefone);
 
         if (new EmailManagerImpl().EnviarEmail(contacto)) {
             mod.addAttribute("confirmacao", "Email enviado com Sucesso!");
