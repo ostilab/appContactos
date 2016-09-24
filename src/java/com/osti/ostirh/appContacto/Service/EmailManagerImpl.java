@@ -25,8 +25,8 @@ public class EmailManagerImpl implements EmailManager {
     @Override
     public boolean EnviarEmail(Contacto contacto) {
         // Recipient's email ID needs to be mentioned.
-        String to = contacto.getEmail();
-
+        String to = "info@ostirh.com";
+        
         // Sender's email ID needs to be mentioned
         String from = "info@ostirh.com";
         final String username = "info@ostirh.com";//change accordingly
@@ -64,7 +64,7 @@ public class EmailManagerImpl implements EmailManager {
             message.setSubject("Informação sobre o OSTIRH");
 
             // Now set the actual message
-            message.setText(contacto.getMensagem() + "\n\nNome: " + contacto.getNome() + " \nTelefone: " + contacto.getTelefone());
+            message.setText(contacto.getMensagem() + "\n\nNome: " + contacto.getNome() + " \nTelefone: " + contacto.getTelefone() + "\nEmail:" + contacto.getEmail());
 
             // Send message
             Transport.send(message);

@@ -30,17 +30,19 @@ public class MainController {
 
     @RequestMapping("/enviarEmail")
     public String enviarEmail(@RequestParam(value = "email", required = true) String email,
-            @RequestParam(value = "nome", required = true) String nome,
-            @RequestParam(value = "telef", required = true) long telefone,
-            @RequestParam(value = "mensagem", required = true) String mesagem,
+            @RequestParam(value = "name", required = true) String nome,
+            @RequestParam(value = "phone", required = true) long telefone,
+            @RequestParam(value = "message", required = true) String mesagem,
             @RequestParam(value = "codigo_seg", required = false) String codigo, ModelMap mod) {
 
-        Contacto contacto = new Contacto(nome, email, mesagem, telefone);
+        Contacto contacto = new Contacto(nome, "info@ostirh.com", mesagem, telefone);
 
         if (new EmailManagerImpl().EnviarEmail(contacto)) {
             mod.addAttribute("confirmacao", "Email enviado com Sucesso!");
+            mod.addAttribute("contacto", contacto);
         } else {
             mod.addAttribute("confirmacao", "Erro ao enviar Email!");
+            return "erro";
         }
 
         return "index";
