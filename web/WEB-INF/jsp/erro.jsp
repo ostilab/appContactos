@@ -13,7 +13,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="Mobirise v3.4.4, mobirise.com">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+  <link rel="shortcut icon" href="http://ostirh.com/assets/images/ostilogo-376x128-93.png" type="image/x-icon">
   <meta name="description" content="">
   <title>OSTIRH | Confirmação</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic&amp;subset=latin">

@@ -24,7 +24,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class MainController {
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
-    public String inicio(HttpServletResponse response) throws IOException {
+    public String inicio(HttpServletResponse response, @RequestParam(value = "opr_", required = false) String opr) throws IOException {
+        if (opr.equals("enviarEmail"))
+            return "forward:/enviarEmail";
         return "index";
     }
 
