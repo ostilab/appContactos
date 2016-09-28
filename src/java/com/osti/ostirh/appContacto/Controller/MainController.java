@@ -24,7 +24,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class MainController {
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
-    public String inicio(HttpServletResponse response) throws IOException {
+    public String inicio(HttpServletResponse response, @RequestParam(value = "opr_", required = false) String opr) throws IOException {
+        if (opr.equals("enviarEmail"))
+            return "forward:/enviarEmail";
         return "index";
     }
 
@@ -35,7 +37,7 @@ public class MainController {
             @RequestParam(value = "message", required = true) String mesagem,
             @RequestParam(value = "codigo_seg", required = false) String codigo, ModelMap mod) {
 
-        Contacto contacto = new Contacto(nome, "info@ostirh.com", mesagem, telefone);
+        Contacto contacto = new Contacto(nome, email, mesagem, telefone);
 
         if (new EmailManagerImpl().EnviarEmail(contacto)) {
             mod.addAttribute("confirmacao", "Email enviado com Sucesso!");
