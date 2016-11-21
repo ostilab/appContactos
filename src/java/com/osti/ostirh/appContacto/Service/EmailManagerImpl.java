@@ -15,11 +15,13 @@ import javax.mail.Session;
 import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
+import org.springframework.stereotype.Repository;
 
 /**
  *
  * @author len
  */
+@Repository
 public class EmailManagerImpl implements EmailManager {
 
     @Override
